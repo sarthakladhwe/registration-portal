@@ -1,8 +1,9 @@
 import React from 'react'
 
-function Header() {
+function Header({openModal}) {
+
   return (
-    <header className='header'>
+    <header>
         <div>
             <h1 className='logo'>Registration Portal</h1>
         </div>
@@ -15,7 +16,7 @@ function Header() {
                 </select>
                 <button className='btn btn-cat'>+</button>
             </div>
-            <button className='btn'>Add User</button>
+            <button className='btn' onClick={openModal}>Add User</button>
         </div>
     </header>
   )

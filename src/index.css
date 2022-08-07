@@ -5,6 +5,7 @@
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
+  background-color: #F4F4F4;
 }
 
 /* Typography */
@@ -18,19 +19,20 @@ header {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  background-color: #fff;
 }
 
 .header-btns {
   display: flex;
+  margin-bottom: 10px;
 }
 
 .btn {
-  margin: 1.125em;
+  margin-right: 20px;
   padding: 0.5em 1em;
   border: 2px solid #FFC837;
   border-radius: 5px;
   background-color: #FFC837;
-  font-size: 1.25rem;
   font-weight: 700;
   color: #fff;
   cursor: pointer;
@@ -38,14 +40,12 @@ header {
 
 .btn-cat {
   margin-left: 0;
-  font-size: 1.25rem;
   border-radius: 0 5px 5px 0;
 }
 
 select {
   border: 2px solid #FFC837;
   padding: 0.5em 1em;
-  font-size: 1.25rem;
   border-radius: 5px 0 0 5px;
 }
 
@@ -61,4 +61,31 @@ select {
   flex-direction: column;
   align-items: center;
   border: 2px solid #FFC837;
+}
+
+/* New User Modal */
+
+.modal-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  z-index: 10;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 10px;
+  padding: 0.125em 0.5em;
+  font-size: 1.125rem;
+  border-radius: 2px;
+}
+
+input:focus {
+  outline: 2px solid #FFC837;
 }
