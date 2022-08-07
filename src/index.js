@@ -6,10 +6,11 @@ import reportWebVitals from './reportWebVitals';
 
 import { configureStore } from '@reduxjs/toolkit'
 import { Provider } from 'react-redux';
+import usersReducer from './features/Items'
 
 const store = configureStore({
   reducer: {
-    
+    users: usersReducer
   }
 })
 

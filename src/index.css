@@ -27,12 +27,13 @@ header {
 .btn {
   margin: 1.125em;
   padding: 0.5em 1em;
-  border: none;
+  border: 2px solid #FFC837;
   border-radius: 5px;
-  background-color: palevioletred;
+  background-color: #FFC837;
   font-size: 1.25rem;
   font-weight: 700;
   color: #fff;
+  cursor: pointer;
 }
 
 .btn-cat {
@@ -42,7 +43,22 @@ header {
 }
 
 select {
+  border: 2px solid #FFC837;
   padding: 0.5em 1em;
   font-size: 1.25rem;
   border-radius: 5px 0 0 5px;
+}
+
+.users {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(375px, 1fr));
+  gap: 10px;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #FFC837;
 }
