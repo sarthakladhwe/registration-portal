@@ -14,8 +14,8 @@ function App() {
 
   return (
     <div>
-      {openUserModal && <NewUser /> }
       <Header openModal={openModal} />
+      {openUserModal && <NewUser /> }
       <Users />
     </div>
   );
