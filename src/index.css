@@ -74,13 +74,12 @@ select {
 
 /* New User Modal */
 .newuser-container {
-  width: 350px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-
 
 form {
   display: flex;
